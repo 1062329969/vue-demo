@@ -19,9 +19,7 @@
       }
     },
     created(){
-      this.$http
-        .get('http://jsonplaceholder.typicode.com/users')
-        .then((data)=>{
+      this.$http.get('http://jsonplaceholder.typicode.com/users').then((data)=>{
           this.list = data.body
         })
     }
